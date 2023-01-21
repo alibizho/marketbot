@@ -6,9 +6,7 @@ import json
 from json import dump, load
 import os
 import random
-#
-# # # os.chdir("D:\\PYCHARMPROJECT\\discordbot")
-# #
+
 # #
 intents = discord.Intents.default()
 intents.members = True
@@ -947,4 +945,4 @@ async def clear(ctx, amount: str):
     else:
         await ctx.channel.purge(limit=(int(amount) + 1))
 
-bot.run('ODI2NTE4MzEyNzkwOTE3MTIw.YGNpKQ.QgnZ0q98tmvi7c1xIJ4LHYC_1n4', bot=True, reconnect=True)
+bot.run('TOKEN', bot=True, reconnect=True)
